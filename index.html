@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Publicitaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PANTALLA 1: EL INGRESO -->
+    <div id="pantalla-login" class="intro-container">
+        <p>Ingresa el código de 4 dígitos para acceder:</p>
+        <div class="input-group">
+            <input type="password" id="pin-input" maxlength="4" inputmode="numeric" placeholder="****">
+            <button id="btn-verificar">Verificar</button>
+        </div>
+        <p id="mensaje-error" class="error-oculto">Código incorrecto.</p>
+    </div>
+
+    <!-- PANTALLA 2: LA BROMA -->
+    <div id="pantalla-broma" class="intro-container" style="display: none;">
+        <h1 class="texto-animado">¡Cuidado!</h1>
+        <p class="texto-animado">Para continuar es necesario que resuelvas el siguiente problema</p>
+        <img src="broma_imagen.png" alt="Requisito" class="imagen-broma texto-animado">
+        
+        <button id="btn-continuar" class="boton-oculto">No es cierto, como crees jaajsd, Click aqui para entrar</button>
+    </div>
+
+    <!-- PANTALLA 3: EL VIDEO Y AUDIO -->
+    <div id="pantalla-principal" class="main-container" style="display: none;">
+        <video id="bg-video" loop playsinline class="bg-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <audio id="bg-audio" loop>
+            <source src="TimberHearth.mp3" type="audio/mpeg">
+        </audio>
+        
+        <div class="content">
+            <div class="marco-papel">
+                <p>Hola pan</p>
+                <p>Es curioso la emoción que causan las cosas, ver algo, codiciarlo, y guardarlo de una forma extraña, no se necesita ser sutil por que solos revelamos las cosas a una manera. No se si es costumbre, no se bien defuera que nevada tendría que descubrir, pero si se que las temporadas cambian, y el cambio atrae dualidades. Hace mucho un ciervo se amigó con un felino, y no solo aprendió que las cosas no siempre tienen que ser un paradigma que se debe seguir, sino que llegó a pensar en lo virtuoso que debes ser para no lograr el desplomo. Un arbol que no pide ayuda pero si aprovecha la luz para seguir dando esa emoción que mencioné a las personas. Una silenciosa quietud que con templanza se logra apreciar. Fácil el camino que fue encontrarte y ahora no puedo no apreciar ese inconstante que solo tu, como venturosa eres, prosperó.</p>
+                <p>Feliz cumpleaños :)</p> 
+                <p>Unas palabras como siempre sin el afán de ser acerbo.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
